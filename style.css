@@ -109,10 +109,81 @@ section .box-title-collection {
 .filter-wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .filter-wrapper .filter {
-    width: 25%;
+    width: 23%;
+    margin: 20px 0 0 0;
+}
+
+.filter-title {
+    background-color: #00923d;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.filter-card {
+    margin-top: 5px;
+    background: #f3f3f3;
+    border: 1px solid #efefef;
+    padding: 0px 10px 5px;
+}
+
+.filter-card p {
+    border-bottom: 1px dotted #CBCBCB;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0px;
+    margin: 0;
+}
+
+.filter-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px 0 5px 15px;
+}
+
+.filter-card ul li {
+    font-size: 14px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.filter-card .search {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-card input[type="text"] {
+    border: 1px solid #efefef;
+    height: 20px;
+    border-radius: 4px 0px 0px 4px;
+    padding: 4px 8px;
+    width: calc(80% - 30px);
+    border-right: 0;
+}
+
+.search i {
+    background: #00923d;
+    width: 30px;
+    height: 28px;
+    border: 1px solid #efefef;
+    border-radius: 0px 4px 4px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.filter-card input[type="text"]:focus {
+    outline: none;
 }
 
 .items-wrapper {
@@ -120,6 +191,7 @@ section .box-title-collection {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: fit-content;
 }
 
 .items-wrapper .item {
@@ -150,6 +222,7 @@ section .box-title-collection {
     margin: 0;
     margin-bottom: 5px;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .items-wrapper .item .item-information .price {
