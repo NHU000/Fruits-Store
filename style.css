@@ -390,3 +390,21 @@ footer {
     color: #616161;
     transform: translatey(-5px);
 }
+
+/* style cart */
+.table-cart {
+    width: 100%;
+    max-width: 100%;
+    float: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
